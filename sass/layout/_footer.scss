@@ -1,0 +1,79 @@
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.address {
+  margin-right: 93px;
+  font-style: normal;
+}
+
+.footer-logo {
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.contacts-map,
+.contacts-mail,
+.contacts-tel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.contacts-map {
+  color: var(--primary-white-color);
+}
+.contacts .item + .item {
+  margin-top: 9px;
+}
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+
+.contacts-mail,
+.contacts-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.join {
+  margin-right: 93px;
+}
+.title-join {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.join .social-list-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join .social-list-icon {
+  fill: var(--primary-white-color);
+}
+
+.join .social-list-link:hover,
+.join .social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.join .social-list-link:hover .join .social-list-icon,
+.join .social-list-link:focus .join .social-list-icon {
+  fill: var(--primary-white-color);
+}
