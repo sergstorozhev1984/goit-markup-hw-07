@@ -1,4 +1,4 @@
-.section-our-team {
+.our-team-section {
   background-color: #f5f4fa;
 }
 
@@ -6,7 +6,7 @@
   display: flex;
   column-gap: 30px;
 }
-.our-team .item {
+.our-team__item {
   flex-basis: calc((100% - 90px) / 4);
   padding-bottom: 30px;
   background-color: var(--primary-white-color);
@@ -15,19 +15,20 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-member-picture {
+.our-team__img {
   padding-bottom: 30px;
 }
 
-.team-member-job {
-  margin-bottom: 16px;
-}
-.team-member-name {
+.our-team__name {
   margin-bottom: 10px;
 }
 
-.team-member-name,
-.team-member-job {
+.our-team__job {
+  margin-bottom: 16px;
+}
+
+.our-team__name,
+.our-team__job {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -35,7 +36,7 @@
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team-member-job {
+.our-team__job {
   font-weight: 400;
   color: var(--primery-text-color);
 }

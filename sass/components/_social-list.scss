@@ -4,7 +4,7 @@
   column-gap: 10px;
 }
 
-.social-list-link {
+.social-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,11 +19,11 @@
   }
 }
 
-.social-list-icon {
+.social-list__icon {
   fill: var(--primery-text-color);
   transition: fill var(--transition-dur-and-func);
-  .social-list-link:hover &,
-  .social-list-link:focus & {
+  .social-list__link:hover &,
+  .social-list__link:focus & {
     fill: var(--primary-white-color);
   }
 }

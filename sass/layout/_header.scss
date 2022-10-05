@@ -2,42 +2,42 @@
   border-bottom: 1px solid #ececec;
 }
 
-.page-header-container {
+.page-header__container {
   display: flex;
   align-items: center;
 }
 
-.menu-list {
+.menu {
   display: flex;
   align-items: center;
   column-gap: 93px;
 }
 
-.logo-accent {
-  color: var(--accent-color);
+.logo__span_black {
+  color: #000000;
 }
 
-.site-nav-list,
-.auth-nav-list {
+.site-nav,
+.auth-nav {
   display: flex;
   align-items: center;
 }
 
-.site-nav-list {
+.site-nav {
   column-gap: 50px;
   margin-bottom: -1px;
 }
 
-.auth-nav-list {
+.auth-nav {
   margin-left: auto;
 }
 
-.auth-nav-list .mail {
+.auth-nav .mail {
   margin-right: 30px;
 }
 
-.site-nav-link,
-.auth-nav-link {
+.site-nav__link,
+.auth-nav__link {
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -48,18 +48,18 @@
   transition: color var(--transition-dur-and-func);
 }
 
-.site-nav-link {
+.site-nav__link {
   color: var(--title-text-color);
   display: block;
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
-  &.current {
-    color: var(--accent-color);
-    padding-bottom: 0;
-  }
-  &.current::after {
+}
+.site-nav__link_current {
+  color: var(--accent-color);
+  padding-bottom: 0;
+  &::after {
     content: '';
     display: block;
     margin-top: 30px;
@@ -70,34 +70,22 @@
   }
 }
 
-.auth-nav-link {
+.auth-nav__link {
   color: var(--primery-text-color);
   display: flex;
   align-items: center;
   column-gap: 10px;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.icon-mail,
-.icon-tel {
+.auth-nav__icon {
   fill: var(--primery-text-color);
   transition: fill var(--transition-dur-and-func);
-}
-
-.mail-link:hover,
-.mail-link:focus {
-  color: var(--accent-color);
-}
-.mail-link:hover .icon-mail,
-.mail-link:focus .icon-mail {
-  fill: var(--accent-color);
-}
-
-.tel-link:hover,
-.tel-link:focus {
-  color: var(--accent-color);
-}
-
-.tel-link:hover .icon-tel,
-.tel-link:focus .icon-tel {
-  fill: var(--accent-color);
+  .auth-nav__link:hover &,
+  .auth-nav__link:focus & {
+    fill: var(--accent-color);
+  }
 }
